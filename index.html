@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background-color: #f9e6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.message-box {
+    background-color: #ffccff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    color: #ff66b2;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+
+p {
+    color: #4a4a4a;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+button {
+    background-color: #f21985;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #ff3385;
+}
+</style>
+
+    <div class="container">
+        <div class="message-box">
+            <h1>Happy Birthday Harish!!</h1>
+            <p>Treat vanu macha! </p>
+            <p>Marainthuratha macha vaingi ku macha!</p>
+            <p>Rs.200 ku treat vanu macha</p>
+            <button id="wishButton">Click here</button> 
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+document.addEventListener('DOMContentLoaded', () => { 
+    const wishButton = document.getElementById('wishButton');
+    wishButton.addEventListener('click', () => {
+        alert('Happy Birthday Harish!!');
+    });
+});
+</script>
+
